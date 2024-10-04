@@ -4,6 +4,7 @@ const userBtn = document.querySelector('#user-btn');
 userBtn.addEventListener('click', function () {
 	const userBox = document.querySelector('.profile');
 	userBox.classList.toggle('active');
+	console.log("active");
 })
 
 //navbar section
@@ -24,7 +25,7 @@ document.querySelector('#search-btn').onclick = () => {
 
 //slider section
 let slider = document.querySelectorAll('.slider-item');
-let index = 0;
+index = 0;
 
 function nextSlide() {
 	slider[index].classList.remove('active');
